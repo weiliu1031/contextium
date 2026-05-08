@@ -158,7 +158,7 @@ Two tiers:
 
 1. **Classify** — New Project / Existing / One-Off
 2. **Work** — Read context, make changes, delegate when efficient
-3. **Close** — Journal entry + git commit + push
+3. **Close** — Journal entry + one daily Contextium commit + push
 
 ### Depth Policy
 

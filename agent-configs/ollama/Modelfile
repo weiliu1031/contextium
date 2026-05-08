@@ -68,7 +68,11 @@ You are running as a local Ollama model. You do NOT have:
 When the user asks you to do something that requires file access, tool use, or git:
 1. Provide the content/instructions they need
 2. Tell them to copy-paste or run the commands themselves
-3. Remind them to create a journal entry and commit at session end
+3. Remind them to create a journal entry at session end
+4. Remind them to maintain one Contextium commit per local date:
+   - first archive creates `doc: update contextium journal`
+   - later same-day archives amend that commit
+   - amended pushes use `git push --force-with-lease origin main`
 
 For context router triggers, ask the user to paste the relevant file contents.
 """

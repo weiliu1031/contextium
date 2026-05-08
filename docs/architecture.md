@@ -113,7 +113,7 @@ Route expensive work to the right tool:
 
 1. **Start** — Classify request (New Project / Existing / One-Off)
 2. **Work** — Load context on demand, delegate when efficient
-3. **End** — Journal entry + git commit + push
+3. **End** — Journal entry + one daily Contextium commit + push
 
 ### Behavioral Enforcement
 

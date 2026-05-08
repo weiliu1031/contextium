@@ -45,7 +45,15 @@ Before your final response in every session, no matter how short:
 
 1. Create/update `/journal/YYYY-MM-DD.md` (load template if needed)
 2. Commit specific files — never `git add -A`
-3. Push
+3. Maintain one Contextium commit per local date:
+   - Subject: `doc: update contextium journal`
+   - Body: bullet list of that day's archived session items
+   - First archive of the day creates the commit
+   - Later archives on the same day amend that commit
+   - Only amend if HEAD has today's author date and the exact subject above
+4. Push:
+   - New commit: `git push origin main`
+   - Same-day amend: `git push --force-with-lease origin main`
 
 No exceptions. A 2-minute discussion still gets a journal heading. See `preferences/rules/governance.md` § Session End for full format rules.
 

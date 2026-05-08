@@ -40,4 +40,12 @@ The AI assistant should never send emails on behalf of the user. Draft content f
 
 - [ ] Create/update `/journal/YYYY-MM-DD.md` (structured format, see `preferences/templates/journal_template.md`)
 - [ ] Update project READMEs if statuses changed
-- [ ] `git add <specific files>` -> commit -> push (never `git add -A`)
+- [ ] `git add <specific files>` only; never `git add -A`
+- [ ] Maintain one Contextium commit per local date
+  - Subject: `doc: update contextium journal`
+  - Body: bullet list of that day's archived session items
+  - First archive of the day creates the commit
+  - Later archives on the same day amend the commit and append a body bullet
+  - Only amend if HEAD author date is today and the subject matches exactly
+- [ ] Push new commits with `git push origin main`
+- [ ] Push amended same-day commits with `git push --force-with-lease origin main`

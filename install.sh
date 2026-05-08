@@ -410,6 +410,9 @@ init() {
     "Codex"*)
       cp "agent-configs/codex/AGENTS.md" ./AGENTS.md
       echo -e "  ${GREEN}✓${NC} Installed → AGENTS.md"
+      mkdir -p "$HOME/.codex/skills/contextium"
+      cp "agent-configs/codex/skills/contextium/SKILL.md" "$HOME/.codex/skills/contextium/SKILL.md"
+      echo -e "  ${GREEN}✓${NC} Installed → ~/.codex/skills/contextium/SKILL.md"
       ;;
     "Cursor"*)
       cp "agent-configs/cursor/.cursorrules" ./.cursorrules
@@ -858,6 +861,11 @@ update() {
       elif [[ -f "AGENTS.md" ]] && [[ -f "agent-configs/codex/AGENTS.md" ]]; then
         cp "agent-configs/codex/AGENTS.md" ./AGENTS.md
         echo -e "  ${GREEN}✓${NC} Updated AGENTS.md"
+        if [[ -f "agent-configs/codex/skills/contextium/SKILL.md" ]]; then
+          mkdir -p "$HOME/.codex/skills/contextium"
+          cp "agent-configs/codex/skills/contextium/SKILL.md" "$HOME/.codex/skills/contextium/SKILL.md"
+          echo -e "  ${GREEN}✓${NC} Updated ~/.codex/skills/contextium/SKILL.md"
+        fi
       elif [[ -f "Modelfile" ]] && [[ -f "agent-configs/ollama/Modelfile" ]]; then
         # Preserve user's model choice, update instructions
         CURRENT_MODEL=$(head -1 Modelfile | sed 's/^FROM //')

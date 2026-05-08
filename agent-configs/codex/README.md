@@ -1,7 +1,21 @@
 # Codex Standalone Configuration
 
-> Coming soon. Contextium will support Codex CLI as a primary agent with an `AGENTS.md` adapted from the core context
-> router architecture.
+Contextium supports Codex CLI as a primary agent with an `AGENTS.md` adapted from the core context router architecture.
 
-If you're using Codex as your primary agent and want to help build this config, see
-[CONTRIBUTING.md](../../CONTRIBUTING.md).
+## Optional Skill
+
+Install the bundled `$contextium` skill to make session closeout a direct command:
+
+```bash
+mkdir -p ~/.codex/skills/contextium
+cp agent-configs/codex/skills/contextium/SKILL.md ~/.codex/skills/contextium/SKILL.md
+```
+
+Then run:
+
+```text
+$contextium
+```
+
+Use `$contextium --no-push` to archive locally without pushing, or `$contextium --new-commit` to bypass the daily amend
+behavior for a one-off separate commit.

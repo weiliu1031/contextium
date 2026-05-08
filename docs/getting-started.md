@@ -30,7 +30,7 @@ your AI how to navigate the repo. It will:
 
 1. Load your preferences on every session
 2. Lazy-load files based on what you're working on
-3. End sessions with a journal entry and git commit
+3. End sessions with a journal entry and one daily Contextium commit
 
 ## Deeper Configuration
 

@@ -28,6 +28,8 @@ when changes span many files or require repetitive pattern application.
 5. Verify: `codex "list the files in the current directory"`
 6. See `agent-configs/codex/README.md` for the Codex agent configuration
 7. See `agent-configs/claude/AGENTS.md` for delegation rules
+8. Optional: install `agent-configs/codex/skills/contextium/SKILL.md` into `~/.codex/skills/contextium/SKILL.md` for the
+   `$contextium` session closeout command
 
 ## When to Delegate to Codex
 

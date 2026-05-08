@@ -105,7 +105,7 @@ what you need, when you need it, or just ask your AI to set things up.
 1. **Start a session** — Your AI reads its instruction file, loads your preferences, and classifies the work.
 2. **Work on a task** — The context router lazy-loads relevant files as needed: people cards, project READMEs, prior
    journal entries.
-3. **End the session** — Say "close this out." Your AI journals what happened, commits, and pushes.
+3. **End the session** — Say "close this out." Your AI journals what happened, maintains one Contextium commit for the day, and pushes.
 4. **Next session** — Full history of what you did, decided, and why. No repetition. No context loss.
 
 ### Context Router

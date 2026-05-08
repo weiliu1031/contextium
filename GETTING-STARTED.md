@@ -21,8 +21,8 @@ Your AI remembers everything from today — decisions, context, what's next. Tha
 
 When you're done working, just say **"close this out"** or **"wrap this up."** Your AI will:
 - Write a journal entry summarizing what happened
-- Commit the changes
-- Push to your backup (if you set up GitHub)
+- Maintain one Contextium commit for the day, with each session as a commit-body bullet
+- Push to your backup (if you set up GitHub); amended same-day commits use `--force-with-lease`
 
 This is how your AI's memory grows. Every session gets logged, every decision gets tracked.
 
